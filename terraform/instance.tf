@@ -5,8 +5,11 @@ resource "aws_instance" "web" {
   availability_zone      = var.aws_zone
   vpc_security_group_ids = [aws_security_group.yolo-sg.id]
 
+  
   tags = {
     Name    = "yolo-Instance"
+    project = "yolo"
+    Name    = "jenkins-agent"
     project = "yolo"
   }
 }
