@@ -23,14 +23,14 @@ resource "aws_vpc_security_group_ingress_rule" "allowhttp" {
   ip_protocol       = "tcp"
   to_port           = 80
 }
-resource "aws_vpc_security_group_ingress_rule" "yolodockerport" {
+resource "aws_vpc_security_group_ingress_rule" "yolojenkinsport" {
   security_group_id = aws_security_group.yolo-sg.id
   cidr_ipv4         = "0.0.0.0/0"
   from_port         = 8080
   ip_protocol       = "tcp"
   to_port           = 8080
 }
-resource "aws_vpc_security_group_ingress_rule" "yolojenkinsportp" {
+resource "aws_vpc_security_group_ingress_rule" "yolodockerportp" {
   security_group_id = aws_security_group.yolo-sg.id
   cidr_ipv4         = "0.0.0.0/0"
   from_port         = 8000
