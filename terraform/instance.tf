@@ -16,11 +16,11 @@ resource "aws_instance" "web" {
   instance_type          = t2.micro
   key_name               = jenag-key
   availability_zone      = var.aws_zone
-  vpc_security_group_ids = [aws_security_group.yolo-sg.id]
+  vpc_security_group_ids = [aws_security_group.yolo-jenag-sg]
 
   
   tags = {
-    Name    = "yolo-Instance"
+    Name    = "jenkins-agent"
     project = "yolo"
     
 }
