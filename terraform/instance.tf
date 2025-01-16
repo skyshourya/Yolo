@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
   tags = {
     Name    = "yolo-Instance"
     project = "yolo"
-    
+ }   
 }
 
 
