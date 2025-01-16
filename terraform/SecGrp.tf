@@ -10,7 +10,7 @@ resource "aws_security_group" "yolo-sg" {
 
 resource "aws_vpc_security_group_ingress_rule" "sshformmyip" {
   security_group_id = aws_security_group.yolo-sg.id
-  cidr_ipv4         = "14.139.240.228/32"
+  cidr_ipv4         = "0.0.0.0/0"
   from_port         = 22
   ip_protocol       = "tcp"
   to_port           = 22
