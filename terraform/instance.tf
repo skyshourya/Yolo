@@ -11,7 +11,7 @@ resource "aws_instance" "web" {
     project = "yolo"
     
 }
-resource "aws_instance" "web" {
+resource "aws_instance" "jenkins" {
   ami                    = data.aws_ami.amiID.id
   instance_type          = t2.micro
   key_name               = jenag-key
