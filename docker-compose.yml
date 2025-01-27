@@ -3,6 +3,7 @@ services:
   web:
     build:
       context: .
+    image: jazzyolo:latest
     ports:
       - "8000:8000"
     volumes:
